@@ -3,6 +3,7 @@ package com.target.shot.ui
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -44,6 +45,8 @@ class LevelActivity : AppCompatActivity() {
 
     private var slowMode = false
     private var slowModeEnd = 0L
+
+    private var anim: AnimationDrawable? = null
 
     private val items = mutableListOf<Item>()
 
@@ -160,6 +163,8 @@ class LevelActivity : AppCompatActivity() {
                 params.topMargin = generateFireBallMargin()
                 binding.container?.addView(ball)
                 items.add(ball)
+                anim = ball.drawable as AnimationDrawable
+                ball.post(run)
                 animateBall(ball)
 
             }
@@ -247,6 +252,7 @@ class LevelActivity : AppCompatActivity() {
         }
     }
 
+
     private fun changeSpeedMode() {
         if (slowMode) {
             duration = slowDuration
@@ -312,4 +318,6 @@ class LevelActivity : AppCompatActivity() {
         const val WIN = "win"
         const val LOSE = "lose"
     }
+
+    var run = Runnable { anim?.start() }
 }

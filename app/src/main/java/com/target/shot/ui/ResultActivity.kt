@@ -1,8 +1,6 @@
 package com.target.shot.ui
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.target.shot.R
 import com.target.shot.databinding.ResultFragmentBinding

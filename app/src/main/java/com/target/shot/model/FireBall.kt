@@ -11,7 +11,7 @@ class FireBall(context: Context) : Item(context) {
             DimensionConverter.dpToPixels(93f, mContext),
             DimensionConverter.dpToPixels(33f, mContext)
         )
-        setImageResource(R.drawable.fire1)
+        setImageResource(R.drawable.fireball_anim)
     }
 
     companion object {

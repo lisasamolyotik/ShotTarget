@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "869399814",
+    "project_id": "shot-target-b5c5f",
+    "storage_bucket": "shot-target-b5c5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869399814:android:86e3e60463ae7d6d7ff287",
+        "android_client_info": {
+          "package_name": "com.target.shot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869399814-mbccqslt8ca09e3g57f24cmskbi713kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANVpj4eKHd2D8HQNt6GdfpiavkT0ku_kE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869399814-mbccqslt8ca09e3g57f24cmskbi713kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
