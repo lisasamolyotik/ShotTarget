@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/original_surfer"
+        android:text="@string/rules_title"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/header_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="265dp"
+        android:gravity="center_horizontal"
+        android:text="@string/rules"
+        android:textColor="@color/white"
+        android:textSize="@dimen/rules_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/small_sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/normal_mode_text"
+        style="@style/rules_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="@string/normal_mode"
+        app:layout_constraintBottom_toBottomOf="@id/sun"
+        app:layout_constraintStart_toEndOf="@id/sun"
+        app:layout_constraintTop_toTopOf="@id/sun" />
+
+    <ImageView
+        android:id="@+id/super_sun"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/strong_sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sun" />
+
+    <TextView
+        style="@style/rules_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_mode"
+        app:layout_constraintBottom_toBottomOf="@id/super_sun"
+        app:layout_constraintStart_toStartOf="@id/normal_mode_text"
+        app:layout_constraintTop_toTopOf="@id/super_sun" />
+
+    <ImageView
+        android:id="@+id/water_bomb"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/water_bomb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/super_sun" />
+
+    <TextView
+        style="@style/rules_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/water_bomb"
+        app:layout_constraintBottom_toBottomOf="@id/water_bomb"
+        app:layout_constraintStart_toStartOf="@id/normal_mode_text"
+        app:layout_constraintTop_toTopOf="@id/water_bomb" />
+
+    <ImageView
+        android:id="@+id/slow_booster"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/slow_booster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/water_bomb" />
+
+    <TextView
+        style="@style/rules_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slow_booster"
+        app:layout_constraintBottom_toBottomOf="@id/slow_booster"
+        app:layout_constraintStart_toStartOf="@id/normal_mode_text"
+        app:layout_constraintTop_toTopOf="@id/slow_booster" />
+
+    <ImageView
+        android:id="@+id/super_booster"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/super_booster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slow_booster" />
+
+    <TextView
+        style="@style/rules_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_booster"
+        app:layout_constraintBottom_toBottomOf="@id/super_booster"
+        app:layout_constraintStart_toStartOf="@id/normal_mode_text"
+        app:layout_constraintTop_toTopOf="@id/super_booster" />
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="@dimen/options_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
